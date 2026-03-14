@@ -21,7 +21,7 @@ const styles = stylex.create({
     padding: 10,
     border: '1px solid black',
     borderRadius: 10,
-    backgroundColor: 'lightgray',
+    backgroundColor: 'white',
   },
 })
 
@@ -46,5 +46,5 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
 export const App = createRoutesView({
   routes: [...withLayout(Layout, [FeedScreen, ProfileScreen])],
-  otherwise: () => <div>404</div>,
+  otherwise: () => <div>OOPS! 404</div>,
 })

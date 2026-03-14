@@ -12,7 +12,10 @@ const styles = stylex.create({
     color: 'black',
     padding: 10,
     borderRadius: 10,
-    backgroundColor: 'lightgray',
+    backgroundColor: {
+      default: 'lightgray',
+      ':hover': 'gray',
+    },
   },
 })
 
